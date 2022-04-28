@@ -1,0 +1,1 @@
+Adding in src folder a resouce folder, to store img, CV file, then going to myInformation to into components
