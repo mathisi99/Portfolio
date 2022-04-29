@@ -1,9 +1,8 @@
 import React from 'react'
 import CTA from './CTA'
-import ME from "../../resource/me3.png";
 import "./header.css"
 import HeaderSocials from './HeaderSocials';
-import { CVData } from '../../myInformation';
+import { AboutData, CVData } from '../../myInformation';
 const Header = () => {
   return (
     <header id="home">
@@ -13,7 +12,7 @@ const Header = () => {
         <h5 className="text-light">Fullstack Developer</h5>
         <CTA CVs={CVData}/>
         <div className="me">
-          <img src={ME} alt="me" />
+          <img src={AboutData.HeaderME} alt="me" />
         </div>
         <a href="#contact" className="scroll__down">Scroll Down</a>
         <HeaderSocials />
