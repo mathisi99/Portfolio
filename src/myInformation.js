@@ -1,6 +1,7 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import PortfolioImg from "./resource/portfolioimg.jpg"
 import keeperImg from "./resource/keeper.png";
 import todoImg from "./resource/todo.png";
 import reactHooksImg from "./resource/react_hook.png";
@@ -48,11 +49,13 @@ const ServicesData = [
 ]
 
 const RecentWork = [
+  {imgSrc: PortfolioImg, imgAlt: "Portfolio", projectGithubLink: "https://github.com/mathisi99/Portfolio", projectLink: ""},
   {imgSrc: keeperImg, imgAlt: "Note Keeper", projectGithubLink: "https://github.com/mathisi99/Note-Keeper", projectLink: ""},
   {imgSrc: todoImg, imgAlt: "Todo List", projectGithubLink: "https://github.com/mathisi99/Todolist", projectLink: ""},
   {imgSrc: reactHooksImg, imgAlt: "React Hooks", projectGithubLink: "https://github.com/mathisi99/useCallback-React", projectLink: ""},
   {imgSrc: AIImg, imgAlt: "AI Personal project", projectGithubLink: "https://github.com/Ronpie", projectLink: ""},
 ]
+
 
 
 const testimonialData = [
