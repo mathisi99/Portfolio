@@ -4,12 +4,11 @@ const app = express();
 
 const publicPath = path.join(__dirname, "..", 'public');
 const PORT = process.env.PORT || 3000;
-app.use(express.static('public'));
+app.use(express.static(publicPath));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.get("*", (req, res) => {
-    console.log(path.join(publicPath, "index.html"));
     res.render(path.join(publicPath, "index.html"))
 })
 
