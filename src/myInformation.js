@@ -1,19 +1,32 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import PortfolioImg from "./resource/portfolioimg.jpg"
-import keeperImg from "./resource/keeper.png";
-import todoImg from "./resource/todo.png";
-import reactHooksImg from "./resource/react_hook.png";
-import AIImg from "./resource/gioi-thieu-ai.jpg";
-import AboutME from "./resource/me1.png";
-import HeaderME from "./resource/me3.png";
-import AVTR1 from "./resource/avatar1.jpg"
-import AVTR2 from "./resource/avatar2.jpg"
-import AVTR3 from "./resource/avatar3.jpg"
-import AVTR4 from "./resource/avatar4.jpg"
-import CVFullstack from './resource/CV_Fullstack.pdf'
-import ReactCertificate from "./resource/WebDevelopementNodeJSReactJs.pdf"
+// import PortfolioImg from "./resource/portfolioimg.jpg"
+// import keeperImg from "./resource/keeper.png";
+// import todoImg from "./resource/todo.png";
+// import reactHooksImg from "./resource/react_hook.png";
+// import AIImg from "./resource/gioi-thieu-ai.jpg";
+// import AboutME from "./resource/me1.png";
+// import HeaderME from "./resource/me3.png";
+// import AVTR1 from "./resource/avatar1.jpg"
+// import AVTR2 from "./resource/avatar2.jpg"
+// import AVTR3 from "./resource/avatar3.jpg"
+// import AVTR4 from "./resource/avatar4.jpg"
+// import CVFullstack from './resource/CV_Fullstack.pdf'
+// import ReactCertificate from "./resource/WebDevelopementNodeJSReactJs.pdf"
+import PortfolioImg from "https://drive.google.com/file/d/12xZrO1j_lY1510Y3vNU6-jPxAweV7fy-/view?usp=sharing"
+import keeperImg from "https://drive.google.com/file/d/1BJM__tXbKkg9tgs1lzNz8XiUJWzcuIrs/view?usp=sharing";
+import todoImg from "https://drive.google.com/file/d/1lN34BYrQ9Qsf64c6r8M4yw_JVPf-6vKc/view?usp=sharing";
+import reactHooksImg from "https://drive.google.com/file/d/1gi5lqlnhp_WMM3_YpyGZv4wa91-qvHEV/view?usp=sharing";
+import AboutME from "https://drive.google.com/file/d/1Zj0c2S48YZRGatmdsL6tFOeZk8BOOvyI/view?usp=sharing"
+import HeaderME from "https://drive.google.com/file/d/1tE74deEqEcB4rcvWKQEaiQEboZ6WyK6z/view?usp=sharing";
+import AIImg from "https://drive.google.com/file/d/11nZr2djtEdEkU-lfSMVOxv_VSg-acUTC/view?usp=sharing";
+import AVTR1 from "https://drive.google.com/file/d/1RNEsY2uPqfh7umVCIrHWuz_Dau0svmL4/view?usp=sharing"
+import AVTR2 from "https://drive.google.com/file/d/1lkcw7T6PGpkgkzBGLLwR-Vx8O0UqlqV1/view?usp=sharing"
+import AVTR3 from "https://drive.google.com/file/d/1wmOxTmVId0bk5VjsoXwiD2Pr97QOP0DJ/view?usp=sharing"
+import AVTR4 from "https://drive.google.com/file/d/16VWVECkUkmD6duH3EoBpRwkNypTClzgf/view?usp=sharing"
+import CVFullstack from 'https://drive.google.com/file/d/1M8Or5kfI_htw7hf-3RufY2B5Kq4RwIod/view?usp=sharing'
+import ReactCertificate from "https://drive.google.com/file/d/1xuoLWVRY9s0mwVBgCFDmz8pqONHKl1Ht/view?usp=sharing"
 const CVData = [
   {CV: CVFullstack, downloadDescription: "Download CV"},
   {CV: ReactCertificate, downloadDescription: "Download My React "},
