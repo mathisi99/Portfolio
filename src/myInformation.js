@@ -42,7 +42,7 @@ const ServicesData = [
 ]
 
 const RecentWork = [
-  {imgSrc: process.env.PUBLIC_URL + "/resource/portfolioimg.jpg", imgAlt: "Portfolio", projectGithubLink: "https://github.com/mathisi99/Portfolio", projectLink: ""},
+  {imgSrc: process.env.PUBLIC_URL + "/resource/portfolioimg.jpg", imgAlt: "Portfolio", projectGithubLink: "https://github.com/mathisi99/Portfolio", projectLink: "https://portfoliozhan.herokuapp.com"},
   {imgSrc: process.env.PUBLIC_URL + "/resource/keeper.png", imgAlt: "Note Keeper", projectGithubLink: "https://github.com/mathisi99/Note-Keeper", projectLink: ""},
   {imgSrc: process.env.PUBLIC_URL + "/resource/todo.png", imgAlt: "Todo List", projectGithubLink: "https://github.com/mathisi99/Todolist", projectLink: ""},
   {imgSrc: process.env.PUBLIC_URL + "/resource/react_hook.png", imgAlt: "React Hooks", projectGithubLink: "https://github.com/mathisi99/useCallback-React", projectLink: ""},
