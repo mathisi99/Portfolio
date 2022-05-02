@@ -8,6 +8,23 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
+
+// import mongoose, {Schema} from "mongoose";
+
+// var imgSchema = new Schema({
+//     img:{
+//         data: Buffer,
+//         contentType: String,
+        
+//     },
+//     name: {
+//         required: true,
+//         type:String,
+//     }
+// })
+
+// var Img = mongoose.model("Image", imgSchema);
+
 export default function App(){
     return (<>
         <Header />

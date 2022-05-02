@@ -1,27 +1,14 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import PortfolioImg from "./resource/portfolioimg.jpg"
-import keeperImg from "./resource/keeper.png";
-import todoImg from "./resource/todo.png";
-import reactHooksImg from "./resource/react_hook.png";
-import AIImg from "./resource/gioi-thieu-ai.jpg";
-import AboutME from "./resource/me1.png";
-import HeaderME from "./resource/me3.png";
-import AVTR1 from "./resource/avatar1.jpg"
-import AVTR2 from "./resource/avatar2.jpg"
-import AVTR3 from "./resource/avatar3.jpg"
-import AVTR4 from "./resource/avatar4.jpg"
-import CVFullstack from './resource/CV_Fullstack.pdf'
-import ReactCertificate from "./resource/WebDevelopementNodeJSReactJs.pdf"
 const CVData = [
-  {CV: CVFullstack, downloadDescription: "Download CV"},
-  {CV: ReactCertificate, downloadDescription: "Download My React "},
+  {CV: process.env.PUBLIC_URL + "/resource/CV_Fullstack.pdf", downloadDescription: "Download CV"},
+  {CV: process.env.PUBLIC_URL + "/resource/WebDevelopementNodeJSReactJs.pdf", downloadDescription: "Download My React "},
 ]
 
 const AboutData = {
-  HeaderME:HeaderME,
-  AboutME:AboutME
+  HeaderME:process.env.PUBLIC_URL + "/resource/me3.png",
+  AboutME:process.env.PUBLIC_URL + "/resource/me1.png"
 }
 
 const SocialData = [
@@ -55,20 +42,20 @@ const ServicesData = [
 ]
 
 const RecentWork = [
-  {imgSrc: PortfolioImg, imgAlt: "Portfolio", projectGithubLink: "https://github.com/mathisi99/Portfolio", projectLink: ""},
-  {imgSrc: keeperImg, imgAlt: "Note Keeper", projectGithubLink: "https://github.com/mathisi99/Note-Keeper", projectLink: ""},
-  {imgSrc: todoImg, imgAlt: "Todo List", projectGithubLink: "https://github.com/mathisi99/Todolist", projectLink: ""},
-  {imgSrc: reactHooksImg, imgAlt: "React Hooks", projectGithubLink: "https://github.com/mathisi99/useCallback-React", projectLink: ""},
-  {imgSrc: AIImg, imgAlt: "AI Personal project", projectGithubLink: "https://github.com/Ronpie", projectLink: ""},
+  {imgSrc: process.env.PUBLIC_URL + "/resource/portfolioimg.jpg", imgAlt: "Portfolio", projectGithubLink: "https://github.com/mathisi99/Portfolio", projectLink: ""},
+  {imgSrc: process.env.PUBLIC_URL + "/resource/keeper.png", imgAlt: "Note Keeper", projectGithubLink: "https://github.com/mathisi99/Note-Keeper", projectLink: ""},
+  {imgSrc: process.env.PUBLIC_URL + "/resource/todo.png", imgAlt: "Todo List", projectGithubLink: "https://github.com/mathisi99/Todolist", projectLink: ""},
+  {imgSrc: process.env.PUBLIC_URL + "/resource/react_hook.png", imgAlt: "React Hooks", projectGithubLink: "https://github.com/mathisi99/useCallback-React", projectLink: ""},
+  {imgSrc: process.env.PUBLIC_URL + "/resource/gioi-thieu-ai.jpg", imgAlt: "AI Personal project", projectGithubLink: "https://github.com/Ronpie", projectLink: ""},
 ]
 
 
 
 const testimonialData = [
-  {avatar: AVTR1, name: "Test User 1", content: "High quality Product"},
-  {avatar: AVTR2, name: "Test User 2", content: "High quality Product"},
-  {avatar: AVTR3, name: "Test User 3", content: "High quality Product"},
-  {avatar: AVTR4, name: "Test User 4", content: "High quality Product"},
+  {avatar: process.env.PUBLIC_URL + "/resource/avatar1.jpg", name: "Test User 1", content: "High quality Product"},
+  {avatar: process.env.PUBLIC_URL + "/resource/avatar2.jpg", name: "Test User 2", content: "High quality Product"},
+  {avatar: process.env.PUBLIC_URL + "/resource/avatar3.jpg", name: "Test User 3", content: "High quality Product"},
+  {avatar: process.env.PUBLIC_URL + "/resource/avatar4.jpg", name: "Test User 4", content: "High quality Product"},
 ]
 
 
