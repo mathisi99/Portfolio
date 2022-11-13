@@ -1,10 +1,11 @@
 import React from 'react'
 import "./about.css"
 import AboutCard from './AboutCard';
-import BookIcon from '@mui/icons-material/Book';
-// import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import FolderSharedIcon from '@mui/icons-material/FolderShared';
-import { AboutData } from '../../myInformation';
+import { AboutData, AboutInformations } from '../../myInformation';
+
+const createAboutCard = (aboutInfor) => {
+  return <AboutCard key={aboutInfor.title} icons={aboutInfor.icons} title={aboutInfor.title} description={aboutInfor.description}/>
+}
 
 const About = () => {
   return (
@@ -20,15 +21,8 @@ const About = () => {
           </div>
           <div className="about__content">
             <div className="about__cards">
-              <AboutCard icons={BookIcon} title={"Experience"} description={"2+ Years Working"}/>
-              {/* <AboutCard icons={PersonOutlineIcon} title={"Clients"} description={"20+ Country"}/> */}
-              <AboutCard icons={FolderSharedIcon} title={"Projects"} description={"30+ Completed"}/>
+              {AboutInformations.map(createAboutCard)}
             </div>
-
-          <p>
-
-
-          </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
           </div>

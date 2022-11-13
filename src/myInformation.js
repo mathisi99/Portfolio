@@ -1,9 +1,17 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import BookIcon from '@mui/icons-material/Book';
+import FolderSharedIcon from '@mui/icons-material/FolderShared';
+
 const CVData = [
   {CV: process.env.PUBLIC_URL + "/resource/CV_Fullstack.pdf", downloadDescription: "Download CV"},
   {CV: process.env.PUBLIC_URL + "/resource/WebDevelopementNodeJSReactJs.pdf", downloadDescription: "Download My React "},
+]
+
+const AboutInformations = [
+  {icons:BookIcon, title:"Experience", description:`${new Date().getFullYear()-2019}+ Years Working`},
+  {icons:FolderSharedIcon, title:"Projects", description:"30+ Completed"}
 ]
 
 const AboutData = {
@@ -69,4 +77,4 @@ const sectionData = [
   {text: "Contact", linkTo:"#contact"},
 ]
 
-export {CVData, AboutData, SocialData, ExperienceData, ServicesData, RecentWork, sectionData, testimonialData}
+export {CVData, AboutData, SocialData, ExperienceData, ServicesData, RecentWork, sectionData, testimonialData, AboutInformations}

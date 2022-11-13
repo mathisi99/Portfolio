@@ -1,42 +1,47 @@
-import React from 'react'
-import "./testimonials.css"
+import React from "react";
+import "./testimonials.css";
 
-import Testimonial from './Testimonial'
-import {Navigation, Pagination, Scrollbar} from 'swiper';
-import {Swiper, SwiperSlide } from 'swiper/react';
+import Testimonial from "./Testimonial";
+import { Navigation, Pagination, Scrollbar } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 // import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/scrollbar';
-import 'swiper/css/pagination';
-import { testimonialData } from '../../myInformation';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import "swiper/css/pagination";
+import { testimonialData } from "../../myInformation";
+
+const createTestimonial = (testimonial) => {
+  return (
+    <SwiperSlide key={testimonial.name}>
+      <Testimonial
+        avatar={testimonial.avatar}
+        name={testimonial.name}
+        content={testimonial.content}
+      />
+    </SwiperSlide>
+  );
+};
+
 const Testimonials = () => {
   return (
-    <section id='testimonials'>
+    <section id="testimonials">
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
-      <Swiper 
+      <Swiper
         className="container testimonials__container"
         modules={[Navigation, Pagination, Scrollbar]}
         spaceBetween={40}
         slidesPerView={1}
-        navigation={{clickable: true}}
-        pagination={{clickable: true}}
-        scrollbar={{draggable: true}}
+        navigation={{ clickable: true }}
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        {testimonialData.map(obj => {
-          return ( 
-            <SwiperSlide>
-              <Testimonial avatar={obj.avatar} name={obj.name} content={obj.content} />
-            </SwiperSlide>
-          )
-        })}
-        
+        {testimonialData.map(createTestimonial)}
       </Swiper>
-        
     </section>
-  )
-}
+  );
+};
 
-export default Testimonials
+export default Testimonials;
